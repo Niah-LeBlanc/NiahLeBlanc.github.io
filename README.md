@@ -1,7 +1,6 @@
 Niah LeBlanc – Developer Portfolio
 
-Live Site: https://niahleblanc.github.io/
-
+Live Site: https://niah-leblanc.github.io/NiahLeBlanc.github.io/
 Overview
 
 This repository contains the source code for my personal developer portfolio website. The site showcases my full-stack web development projects, technical skills, and background as an Application & Web Development student graduating May 2026.
