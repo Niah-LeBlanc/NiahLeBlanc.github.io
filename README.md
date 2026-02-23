@@ -1,6 +1,6 @@
 Niah LeBlanc – Developer Portfolio
 
-Live Site: https://niah-leblanc.github.io/
+Live Site: https://niahleblanc.github.io/
 
 Overview
 
