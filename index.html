@@ -71,6 +71,8 @@
             transition: color 0.2s;
         }
         .nav-links a:hover { color: var(--ink); }
+        .nav-links .resume-nav { color: var(--accent) !important; }
+        .nav-links .resume-nav:hover { color: var(--ink) !important; }
 
         /* ── HERO ── */
         .hero {
@@ -401,6 +403,29 @@
             background: var(--accent);
             color: var(--white);
         }
+
+        /* ── RESUME BUTTON ── */
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.65rem 1.25rem;
+            border: 1px solid var(--accent);
+            border-radius: 2px;
+            background: transparent;
+            transition: background 0.2s, color 0.2s;
+        }
+        .resume-btn:hover {
+            background: var(--accent);
+            color: var(--white);
+        }
     </style>
 </head>
 <body>
@@ -439,7 +464,7 @@
             <strong style="margin-top:1rem;">School</strong>
             Ranken Technical College
             <strong style="margin-top:1rem;">Status</strong>
-            Available for hire
+            <a href="#contact" style="color:var(--accent);text-decoration:none;font-weight:500;">Available for hire ↓</a>
         </div>
     </header>
 
@@ -454,14 +479,15 @@
         <div class="about-grid">
             <div class="about-text">
                 <p>
-                    I'm in my final semester at Ranken Technical College, completing an Associate's degree
-                    in Web Development. Over the past two years I've built full-stack applications using
-                    modern frameworks and worked with both SQL and NoSQL databases.
+                    I'm in my final semester at Ranken Technical College, graduating May 2026 with an A.A.S.
+                    in Information Technology — Application &amp; Web Development. Over the past two years
+                    I've designed and built full-stack applications spanning REST APIs, authentication systems,
+                    relational and document databases, and cloud deployment.
                 </p>
                 <p>
-                    My coursework has covered front-end frameworks like React, back-end development with
-                    Node.js and C#, database design, and responsive UI development. I focus on writing
-                    clean, maintainable code and building applications that solve real problems.
+                    I work across the MERN stack and C# MVC, with hands-on experience architecting backend
+                    pipelines, designing database schemas, and deploying to Azure. I'm actively looking for
+                    an entry-level role where I can keep building real things.
                 </p>
             </div>
             <div class="skills-block">
@@ -504,9 +530,10 @@
             </svg>
             <h3>Issue Tracker Application</h3>
             <p>
-                A full-stack issue tracker built with React, Tailwind CSS, and Node.js, using MongoDB
-                for data storage. Implements full CRUD operations and integrates Better Auth for secure
-                authentication, with a focus on clean structure and maintainability.
+                Developed a REST API using Node.js and Express with a modular controller structure and
+                MongoDB schema design supporting scalable issue tracking and project-based organization.
+                Implemented secure authentication using Better Auth (JWT-based) with protected routes
+                and a responsive React frontend.
             </p>
             <div class="tags">
                 <span class="tag">React</span>
@@ -530,15 +557,17 @@
             </svg>
             <h3>ByteBoard — Collaborative Code Discussion Platform</h3>
             <p>
-                An optionally anonymous forum for sharing code, files, and technical ideas, organized into
-                language-specific boards with threaded posts, tagging, and expandable file snippets. Emphasizes
-                structured discussion, full CRUD workflows, authentication, and moderation over social metrics.
+                Architected a full CRUD system using C# MVC and SQL Server with a relational database
+                schema supporting boards, threaded posts, tagging, and expandable file snippets.
+                Implemented authentication via Better Auth and role-based moderation controls, deployed
+                to Azure with an emphasis on structured discussion over social metrics.
             </p>
             <div class="tags">
                 <span class="tag">C# MVC</span>
-                <span class="tag">SQL</span>
+                <span class="tag">SQL Server</span>
                 <span class="tag">Tailwind CSS</span>
                 <span class="tag">Azure</span>
+                <span class="tag">Better Auth</span>
             </div>
             <a href="https://github.com/Niah-LeBlanc/ByteBoard.git" class="project-link">
                 View project
@@ -555,11 +584,10 @@
             </svg>
             <h3>FastGuide.AI: YouTube Lecture to Study Guide Converter</h3>
             <p>
-                A full-stack web application that converts long-form YouTube lecture videos into structured,
-                professional study guides. Users submit a video URL; the platform extracts the transcript,
-                analyzes the content with AI, and outputs a polished, LibreOffice-compatible document —
-                complete with section headers, code breakdowns, external resource links, and automatic
-                flags for deprecated APIs or outdated practices.
+                Designed a backend pipeline to retrieve YouTube transcripts, process text through AI APIs,
+                and dynamically generate structured study documents with section headers, code breakdowns,
+                resource links, and deprecation flags. Built with C# MVC and deployed to Azure with a
+                production-ready configuration and responsive Tailwind CSS frontend.
             </p>
             <div class="tags">
                 <span class="tag">C# MVC</span>
@@ -603,7 +631,7 @@
                 </svg>
                 LinkedIn
             </a>
-            <a href="/cdn-cgi/l/email-protection#6f01060e0741030a0d030e010c2f0a020e0603410c0002" class="contact-link">
+            <a href="mailto:niahleblanc@protonmail.com" class="contact-link">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
