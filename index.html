@@ -378,6 +378,29 @@
             .project-card { padding: 1.75rem; }
             h1 { font-size: 2.5rem; }
         }
+
+        /* ── RESUME BUTTON ── */
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.65rem 1.25rem;
+            border: 1px solid var(--accent);
+            border-radius: 2px;
+            background: transparent;
+            transition: background 0.2s, color 0.2s;
+        }
+        .resume-btn:hover {
+            background: var(--accent);
+            color: var(--white);
+        }
     </style>
 </head>
 <body>
@@ -389,6 +412,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="NiahLeBlanc_Resume.pdf" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">Résumé</a></li>
             </ul>
         </div>
     </nav>
@@ -402,6 +426,12 @@
                 I build full-stack web applications using modern frameworks and databases —
                 spanning MERN stack, C# MVC, React, and both SQL and NoSQL.
             </p>
+            <a href="NiahLeBlanc_Resume.pdf" download class="resume-btn animate d4">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="15" height="15">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a1 1 0 001 1h16a1 1 0 001-1v-3"/>
+                </svg>
+                Download Résumé
+            </a>
         </div>
         <div class="hero-meta animate d4">
             <strong>Degree</strong>
@@ -573,7 +603,7 @@
                 </svg>
                 LinkedIn
             </a>
-            <a href="mailto:niah.leblanc@email.com" class="contact-link">
+            <a href="/cdn-cgi/l/email-protection#6f01060e0741030a0d030e010c2f0a020e0603410c0002" class="contact-link">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
@@ -590,4 +620,8 @@
 
     <footer>
         <p>© 2026 Niah LeBlanc</p>
+        <a href="NiahLeBlanc_Resume.pdf" download style="font-size:0.8rem;color:var(--muted);text-decoration:none;letter-spacing:0.06em;">Download Résumé ↓</a>
     </footer>
+
+</body>
+</html>
